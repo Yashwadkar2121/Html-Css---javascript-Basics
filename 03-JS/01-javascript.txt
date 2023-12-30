@@ -1,0 +1,29 @@
+what is the Javascript ?
+Javascript is an interpreted,client-side,event-based,object-oriented scripting language
+invented in 1995 netscape corportion (livescript)
+Javascript program are run by an interpreted built into the user's web browser
+it is a case sensitive language
+
+What can Javascript do?
+Javascript can dynamically modify an HTML page 
+Javascript can validate user input
+use to create cookies
+it is full-featured programming language
+Javascript user interaction does not require any communication with the server
+
+What makes Javascript unique?
+support by all major browser and enbled by default
+complex thing are done simply 
+full integrated with HTML / CSS
+
+Javascript frameworks and librarise
+1--> Angular
+2--> React
+3--> JQuery
+4--> Vue.js
+5--> Ext.js
+6--> Ember.js
+7--> Node.js
+8--> Polymer
+9--> Aurelia
+10--> Backbone,js

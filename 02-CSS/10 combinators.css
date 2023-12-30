@@ -1,0 +1,14 @@
+/* combination define reationship between two selectors */
+
+/* 1)-->Descendant selectors = '' */
+
+/* div p {} */
+
+/* 2)-->child selectors = > */
+/* div > h1 */
+
+/* 3)-->adjacent sibling selector = + */
+/* div + .menu-items */
+
+/* 4)-->General sibling Seclector = ~ */
+/* div ~ h3 */

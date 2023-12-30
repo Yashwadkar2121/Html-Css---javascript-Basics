@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation using js DOM</title>
+    <style>
+      .Yellow-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+      #Red-Box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="Move()">Click Me</button><br /><br />
+    <div class="Yellow-box">
+      <div id="Red-Box"></div>
+    </div>
+  </body>
+  <script>
+    function Move() {
+      var redele = document.getElementById("Red-Box");
+      var positionOfEle = 0;
+      var anim = setInterval(animate, 5);
+
+      function animate() {
+        if (positionOfEle == 350) {
+          clearInterval(animate);
+        } else {
+          positionOfEle++;
+          redele.style.top = positionOfEle + "px";
+          redele.style.left = positionOfEle + "px";
+        }
+      }
+    }
+  </script>
+</html>

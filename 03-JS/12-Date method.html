@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date method</title>
+  </head>
+  <body>
+    <h1 id="result"></h1>
+    <button onclick="getDate()">Date</button>
+    <button onclick="year()">Year</button>
+    <button onclick="month()">Month</button>
+    <button onclick="hour()">Hour</button>
+    <button onclick="todaydate()">Date</button>
+    <button onclick="day()">Day</button>
+    <button onclick="min()">Min</button>
+    <button onclick="time()">Time</button>
+    <button onclick="Sec()">Sec</button>
+  </body>
+  <script>
+    var date = new Date();
+    function getDate() {
+      // To get Current Date
+      document.getElementById("result").innerText = date;
+    }
+    function year() {
+      // To get Four digit no.
+      document.getElementById("result").innerText = date.getFullYear();
+    }
+    function month() {
+      // Get a day as a number (0-11)
+      var month = [
+        "jan",
+        "feb",
+        "mar",
+        "arp",
+        "may",
+        "jun",
+        "july",
+        "aug",
+        "sep",
+        "oct",
+        "nov",
+        "dec",
+      ];
+      document.getElementById("result").innerText = date.getMonth();
+    }
+    function hour() {
+      // get hour as (0-23)
+      document.getElementById("result").innerText = date.getHours();
+    }
+    function todaydate() {
+      // get a day as number (1-31)
+      document.getElementById("result").innerText = date.getDate();
+    }
+    function day() {
+      // get weekend as number (0-6)
+      document.getElementById("result").innerText = date.getDay();
+    }
+    function min() {
+      // get a minute (0-59)
+      document.getElementById("result").innerText = date.getMinutes();
+    }
+    function time() {
+      // millseconds since jan 1,1970
+      document.getElementById("result").innerText = date.getTime();
+    }
+    function Sec() {
+      // Get A seconds (0-59)
+      document.getElementById("result").innerText = date.getSeconds();
+    }
+  </script>
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClearTimeout</title>
+    <script type="text/javascript">
+      // clearTimeout ( )
+      var my;
+      function start() {
+        my = setTimeout(function () {
+          document.write(" <h1> To break the setTimeout() </h1>");
+        }, 5000);
+      }
+
+      function stop() {
+        clearTimeout(my);
+        alert("Timeout stop");
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+  </body>
+</html>

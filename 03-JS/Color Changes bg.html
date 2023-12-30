@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color change</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img id="bg-image" src="sample-images.jpg" alt="" />
+        <h1 id="countdown">10</h1>
+      </div>
+    </header>
+  </body>
+  <script>
+    var countDownElement = document.getElementById("countdown");
+    var bgImageElement = document.getElementById("bg-image");
+
+    var inintiCountdownVal = countDownElement.innerHTML;
+
+    setInterval(function () {
+      inintiCountdownVal = inintiCountdownVal > 0 ? inintiCountdownVal - 1 : 0;
+
+      countDownElement.innerHTML = inintiCountdownVal;
+
+      var backImgPath =
+        inintiCountdownVal % 2 === 0 ? "sample-images.jpg" : "Jalgoan.jpg";
+
+      bgImageElement.src = backImgPath;
+    }, 1000);
+  </script>
+</html>

@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event listener method</title>
+  </head>
+  <body>
+    <div id="counter"></div>
+    <button id="btn">Click Me</button>
+    <button id="stop" onclick="stop()">Stop</button>
+  </body>
+  <script>
+    // var btn = document.getElementById("btn-click")
+    // function onBtnclick() {
+    //   btn.style.backgroundColor = "blue";
+    // }
+    // btn.onBtnclick = onBtnclick;
+
+    var i = 0;
+    // add eventlisterner
+    document.getElementById("btn").addEventListener("click", counter);
+    function counter() {
+      document.getElementById("counter").innerText = i;
+      i++;
+    }
+
+    document.getElementById("btn").addEventListener("mouseenter", colorchange);
+
+    function colorchange() {
+      document.getElementById("counter").style.color = "red";
+    }
+
+    // remove eventlisterner
+    function stop() {
+      document.getElementById("btn").removeEventListener("click", counter);
+    }
+  </script>
+</html>

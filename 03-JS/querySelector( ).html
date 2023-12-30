@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>querySelector( )</title>
+    <style>
+      .small {
+        font-size: 48px;
+      }
+      .big {
+        font-size: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="tan">
+      <h3 class=".blog-card">
+        <h2>Nothing</h2>
+      </h3>
+      <h3 class=".blog-card">
+        <h2>To do</h2>
+      </h3>
+    </table>
+    <h4 id="MAIN" class="small">ADD and REMOVE classes</h4>
+  </body>
+  <script>
+    document.querySelector(".blog-card h2");
+    document.querySelectorAll(".blog-card h2");
+
+    document.querySelector("#tan");
+
+    // ADD AND REMOVE CLASSES
+    var mainHeading = document.getElementById("MAIN");
+    mainHeading.classList.add("big");
+    mainHeading.classList.remove("big");
+  </script>
+</html>

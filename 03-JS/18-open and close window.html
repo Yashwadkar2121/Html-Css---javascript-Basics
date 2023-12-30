@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open and close Window</title>
+  </head>
+  <script type="text/javascript">
+    var win;
+    function openWin() {
+      win = window.open(
+        "https://mail.google.com/mail/u/0/#inbox",
+        "width=50px",
+        "height=100px"
+      );
+    }
+    function closeWin() {
+      win.close();
+    }
+  </script>
+  <body>
+    <button onclick="openWin()">open window</button>
+    <button onclick="closeWin()">close window</button>
+  </body>
+</html>

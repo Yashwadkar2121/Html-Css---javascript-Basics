@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>imp function</title>
+  </head>
+  <body></body>
+  <script>
+    // To clear a value
+    console.clear();
+
+    // some imp function
+    alert("Error");
+    console.log("Imp Function");
+    document.write(" <h1> Hello </h1");
+    prompt("please enter your name", "imp function");
+    confirm("do you want to login ?");
+
+    // Hosting variable
+    num1 = 4;
+    console.log(num1);
+    var num1;
+
+    // Not Allow
+    console.log(num2);
+    num2 = 8;
+    var num2;
+
+    // Hosting function
+    sum(5, 5);
+    sum(10, 10);
+    function sum(num10, num11) {
+      console.log(num10 + num11);
+    }
+    sum(20, 20);
+
+    //   Not Allow
+    sum(5, 5);
+    sum(10, 10);
+    var sum = function sum(num10, num11) {
+      console.log(num10 + num11);
+    };
+    sum(20, 20);
+
+    // Allow
+    var sum = function sum(num10, num11) {
+      console.log(num10 + num11);
+    };
+    sum(20, 20);
+  </script>
+</html>
