@@ -17,14 +17,20 @@
 				<option value="kunal">kunal</option>
 				<option value="akash">akash</option>
 			</datalist>
+			lebal
 			Address:-<textarea name="Address" placeholder="Enter your Address" autofocus ="" required ="" maxlength="50" /></textarea><br/><br/>
-			Gender :-<input type="Radio"value="M" name="Gender" /> Male
-			         <input type="Radio"value="F" name="Gender"/> Female
-			         <input type="Radio"value="O" name="Gender" disabled =""/> Other<br/><br/>
+			<label>Gender :-
+			        <input type="Radio"value="M" name="Gender" /> Male
+			        <input type="Radio"value="F" name="Gender"/> Female
+			        <input type="Radio"value="O" name="Gender" disabled =""/> Other<br/><br/>
+					</label>
+			<label>
 			Habitte:-<input type="checkbox" value="C" name="Habitte[]" checked =""/>Crikect
 			         <input type="checkbox" value="F" name="Habitte[]"/>Football
 			         <input type="checkbox" value="D" name="Habitte[]"/>Dancing<br/><br/>
-			Country:-<select>
+			</label>
+		    <label>
+					 Country:-<select>
 				             <optgroup label="A">
 				             	<option>Ind</option>
 				             	<option>Sl</option>
@@ -36,7 +42,12 @@
 				             </optgroup>
 			         </select>
                      <br/><br/>
+			</label>
+			<label>
            Image:-<input type="file" name="Image"/><br/><br/>
+			</label>
+
+			<label>
 
            <b>Html 5 Tags<b><br/><br/>
            Number:<input type="number" name="Number"><br/><br/>
@@ -44,7 +55,8 @@
            color:-<input type="color" name="color" value="yellow"><br/><br/>
            Password :-<input type="password" name="Password"><br/><br/>
            Hidden:-<input type="hidden" name="Hidden"><br/><br/>
-
+		   </label>
+		   <label>
            <b>Html 5 Calender Element<b><br/><br/>
            Date:-<input type="date" name="Date"><br/><br/>
            Datetime-local:-<input type="datetime-local" name="Datetime-local"><br/><br/>
@@ -55,6 +67,7 @@
 
 			<input type="submit" name="">
 			<input type="reset" name="">
+		   </label>
 		</fieldset>
 	</form>
 
